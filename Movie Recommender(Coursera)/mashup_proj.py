@@ -48,7 +48,7 @@ def get_movie_data(string):
     print(ombd_resp.url)
     return ombd_resp.json()
 
-# Extracting movie rating from Rotten Tomatoes
+# Extracting movie rating from IMDb
 def get_movie_rating(diction):
     for critic in diction['Ratings']:
         if critic['Source'] == "IMDb":
